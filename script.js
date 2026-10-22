@@ -44,7 +44,8 @@ const rendiTabellone = () => {
 };
 
 // 2. Funzione che pesca un numero casuale tra quelli non ancora estratti
-const estrai = () => {
+// va messa prima di mathrandom per (complessità temporale)
+const estrai = () => {                                              
     if (usciti.length >= 90) {
         alert('Tutti i numeri sono stati estratti!');
         return;
